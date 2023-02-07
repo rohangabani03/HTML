@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        // original class - .header-top
+        // replacement class - menu-fixed
+        $(document).ready(function () {
+            $headers = $(".header-top");
+            $(window).scroll(function (event) {
+                $currentVal = $(this).scrollTop();
+                if ($currentVal > 0) {
+                    $headers.addClass("menu-fixed");
+                } else {
+                    $headers.removeClass("menu-fixed");
+                }
+            });
+        });
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header .header-top {
+            background-color: rgb(2, 26, 18);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 1s all ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        header .container {
+            margin: 0px 50px;
+        }
+
+        header .header-nav {
+            display: flex;
+            padding: 30px;
+            /* justify-content: space-around; */
+        }
+
+        header .header-nav .logo {
+            flex: 1;
+        }
+
+        header .header-nav .nav {
+            flex: 2;
+        }
+
+        header .header-nav .nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        header .header-nav .nav ul li {
+            padding: 20px;
+        }
+
+        img {
+            height: 300px;
+            width: 100%;
+        }
+
+        header .menu-fixed {
+            position: fixed;
+            top: 0;
+            background-color: brown;
+            width: 100%;
+        }
+
+        header .menu-fixed a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-nav">
+                    <div class="logo">
+                        <h1><a href="">Logo</a></h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <img src="pic3.jfif" alt="" />
+    </section>
+    <section>
+        <img src="pic4.jfif" alt="" />
+    </section>
+</body>
+
+</html>
