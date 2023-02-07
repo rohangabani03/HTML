@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            font-size: 40px;
+            padding: 11px;
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+            background-color: darkblue;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+
+        li {
+            padding: 20px;
+
+        }
+
+        .list {
+            position: relative;
+        }
+
+        .disp-list {
+            display: none;
+            position: absolute;
+            top: 57px;
+            background-color: blue;
+            padding: 10px;
+            width: 150px;
+        }
+
+        .list:hover .disp-list {
+            display: block;
+        }
+
+        .list_name span {
+            transition: 0.5s all ease;
+        }
+
+        .list_name:hover span {
+            rotate: 180deg;
+        }
+
+
+
+        .list1 {
+            position: relative;
+        }
+
+        .disp-list1 {
+            display: none;
+            position: absolute;
+            top: 57px;
+            background-color: darkblue;
+            padding: 10px;
+            top: 20px;
+            left: 140px
+        }
+
+        .list1:hover .disp-list1 {
+            display: block;
+        }
+
+        .list_name1 span {
+            transition: 0.5s all ease;
+        }
+
+        .list_name1:hover span {
+            rotate: 180deg;
+        }
+
+
+        .btn {
+            border: none;
+            border-radius: 10px;
+            padding: 5px;
+            width: 90px;
+            height: 38px;
+            margin: 17px;
+            background-color: red;
+            color: white;
+        }
+
+        .btn a {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li class="list">
+                    <a href="" class="list_name">services<span class="fa-solid fa-angle-down"></span></a>
+                    <div class="disp-list">
+                        <a href="">Web design</a>
+                        <hr>
+                        <a href="">Marketing</a>
+                        <hr>
+                        <a href="">Wordpress</a>
+                        <hr>
+                        <ul>
+                            <li class="list1">
+                                <a href="" class="list_name1">More<span class="fa-solid fa-chevron-right"></span></a>
+                                <div class="disp-list1" id="deop-list-1">
+                                    <a href="">Html</a> <br>
+                                    <hr>
+                                    <a href="">css</a>
+                                    <hr>
+                                    <a href="">JavaScript</a>
+                                    <hr>
+                                    <a href="">jQuery</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="div">
+            <button class="btn"><a>Login</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
