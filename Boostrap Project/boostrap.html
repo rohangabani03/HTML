@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- bootstrap icon link (cdnjs) -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" />
+    <!-- link custom css -->
+    <link rel="stylesheet" href="customcss.css" />
+    <!-- bxslider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <section class="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="nav-bar">
+                    <nav class="navbar navbar-expand-lg bg-light p-3 nav-bar-pos">
+                        <div class="container">
+                            <a class="navbar-brand logo-text" href="boostrap.html">
+                                SE<span class="fa-solid fa-bullseye"></span>G
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="boostrap.html">Home</a>
+                                    </li>
+                                    <li> <a href="about.html"></a></li>
+                                    <li><a href="services.html"></a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample"
+                                            aria-controls="offcanvasExample">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Pages
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">404 Pages</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Landing Pages</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Element Pages</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#RegisterPage">Registration</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex form1" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search" list="searching" />
+                                    <datalist name="" id="searching">
+                                        <option value="Education"></option>
+                                        <option value="Sports"></option>
+                                        <option value=" graduation"></option>
+                                    </datalist>
+                                    <span class="bi bi-search ser"></span>
+                                </form>
+                            </div>
+                        </div>
+                        <span class="bi bi-moon pos-moon"></span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- header-section -->
+    <section class="main-header">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 mt-5 py-5">
+                    <div class="display-4 fw-bold">
+                        Expect Great Things from
+                        <span class="text-info">Your SEO</span> Agency.
+                    </div>
+                    <div class="divide-line"></div>
+                    <p class="text-muted fw-medium">
+                        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                        vitae sit.Ea ipsum sed consequuntur illum facere.
+                    </p>
+                    <button class="btn btn-1">Read More</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="pic-1.png" alt="" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section class="about-as m-5">
+        <div class="container p-5 text-center">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-auto">
+                    <p class="text-muted fs-5">About Us</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-auto">
+                    <div class="display-4 fw-bold">
+                        Grow Your Business with Our <span class="text-info">SEO</span>
+                        Agency
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-auto">
+                    <p class="text-muted text-center px-lg-5 mx-lg-5 px-0 mx-0 para-text">
+                        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                        vitae sit.Ea ipsum sed consequuntur illum facere.Vivamus a ligula
+                        quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis
+                        sed dolor et amet.
+                    </p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-auto text-center">
+                    <button class="btn btn-1">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-auto">
+                    <!-- heading -->
+                    <div class="row pb-5">
+                        <p class="text-secondary fs-4">Features</p>
+                        <h1>How SEOG Team Can Help</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-auto d-flex justify-content-end">
+                            <span class="fa-solid fa-signal text-info fs-3"></span>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-auto">
+                            <h4 class="pb-2">
+                                <a href="" class="link-chnge">Page Rankings</a>
+                            </h4>
+                            <p class="text-secondary fs-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Illum commodi alias tempora impedit perferendis vitae minima.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-auto d-flex justify-content-end">
+                            <span class="fa-solid fa-cubes text-danger fs-3"></span>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-auto">
+                            <h4 class="pb-2">
+                                <a href="" class="link-chnge">Site Optimisation</a>
+                            </h4>
+                            <p class="text-secondary fs-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Illum commodi alias tempora impedit perferendis vitae minima.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-auto d-flex justify-content-end">
+                            <span class="fa-solid fa-users text-warning fs-3"></span>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-auto">
+                            <h4 class="pb-2">
+                                <a href="" class="link-chnge">User Retention</a>
+                            </h4>
+                            <p class="text-secondary fs-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Illum commodi alias tempora impedit perferendis vitae minima.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-auto">
+                    <img src="pic-4 (1).png" alt="" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reasons section -->
+    <section class="reasons">
+        <div class="container p-5 my-5">
+            <div class="row text-center pb-5">
+                <p class="text-muted fs-5">Reasons Why</p>
+                <h1>
+                    Our Valuable Reputation <br />
+                    Analysis
+                </h1>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <div class="icon pb-2">
+                        <span class="fa-solid fa-laptop text-danger fs-2"></span>
+                    </div>
+                    <div class="content pb-2">
+                        <h3><a href="" class="links">Website content</a></h3>
+                    </div>
+                    <div class="para">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                            blanditiis. Perferendis consequuntur provident dolor
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <div class="icon pb-2">
+                        <span class="fa-solid fa-rocket text-info fs-2"></span>
+                    </div>
+                    <div class="content pb-2">
+                        <h3><a href="" class="links">Visitors Tracking</a></h3>
+                    </div>
+                    <div class="para">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                            blanditiis. Perferendis consequuntur provident dolor
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <div class="icon pb-2">
+                        <span class="fa-solid fa-chart-pie text-warning fs-2"></span>
+                    </div>
+                    <div class="content pb-2">
+                        <h3><a href="" class="links">Result Analysis</a></h3>
+                    </div>
+                    <div class="para">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                            blanditiis. Perferendis consequuntur provident dolor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best -->
+    <section class="best-part">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-auto">
+                    <p class="text-muted fs-5">We're Best in</p>
+                    <h1>Better website means better user experience</h1>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-auto"></div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-auto d-flex align-items-center">
+                    <button class="btn btn-1">Find Out More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--registration page Modal -->
+    <div class="modal fade" id="RegisterPage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Registration Page
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- paste here your code -->
+                <div class="modal-body">
+                    <form action="" method="get" class="needs-validation" novalidate>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <input type="text" name="" id="validationCustom01" value="ABC"
+                                    class="form-control border-dark" required />
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="">Address</label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="" class="form-label">Gender</label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="gen" id="" class="form-check-input" />
+                                    <label for="">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="gen" id="" class="form-check-input" />
+                                    <label for="">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="" class="form-label">City</label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <select name="" id="" class="form-select">
+                                    <option value="">---select---</option>
+                                    <option value="">Surat</option>
+                                    <option value="">Baroda</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="" class="form-label">Date of Joining</label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <input type="date" name="" id="" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="" class="form-label"> Email </label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" name="" id="" class="form-control" />
+                                    <label for="" class="input-group-text">@gmail.com</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="col-auto col-sm-12 col-md-2 col-lg-4">
+                                <label for="" class="form-label">Password</label>
+                            </div>
+                            <div class="col-auto col-sm-12 col-md-6 col-lg-8">
+                                <input type="password" name="" id="" class="form-control" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Register</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasExampleLabel">About As</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <h5>Login Page</h5>
+                <div class="row py-2">
+                    <div class="col-lg-12 py-1">
+                        <input type="text" class="form-control" placeholder="Enter Username" />
+                    </div>
+                    <div class="col-lg-12 py-1">
+                        <input type="password" class="form-control" placeholder="Enter Password" />
+                    </div>
+                    <div class="col-lg-12 py-1">
+                        <input type="submit" class="btn btn-primary" value="Login Here" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blogpost -->
+    <section class="blog-post">
+        <div class="container">
+            <div class="row py-5 text-center w-100">
+                <p class="text-muted">Latest News</p>
+                <h1 class="">Blog Post</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <div class="card card-change" style="width: 22rem">
+                        <img src="images1.jpg" class="card-img-top img-fluid" alt="..." />
+                        <div class="card-body">
+                            <div class="pb-1">
+                                <a href="" class="link1 text-primary">Design</a>
+                            </div>
+                            <div class="pb-1">
+                                <h4>
+                                    <a href="" class="text-dark link-hover">Hello world</a>
+                                </h4>
+                            </div>
+                            <div class="">
+                                <span class="fa-solid fa-user text-muted"></span>
+                                <span class="text-muted">by W3Layouts</span>
+                                <span class="fa-solid fa-clock text-muted"></span>
+                                <span class="text-muted">August 2, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <div class="card card-change" style="width: 22rem">
+                        <img src="images2.jpg" class="card-img-top img-fluid" alt="..." />
+                        <div class="card-body">
+                            <div class="pb-1">
+                                <a href="" class="link1 text-primary">product</a>
+                            </div>
+                            <div class="pb-1">
+                                <h4>
+                                    <a href="" class="text-dark link-hover">We create successful digital products.</a>
+                                </h4>
+                            </div>
+                            <div class="">
+                                <span class="fa-solid fa-user text-muted"></span>
+                                <span class="text-muted">by W3Layouts</span>
+                                <span class="fa-solid fa-clock text-muted"></span>
+                                <span class="text-muted">july 7, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <div class="card card-change" style="width: 22rem">
+                        <img src="images3.jpg" class="card-img-top img-fluid" alt="..." />
+                        <div class="card-body">
+                            <div class="pb-1">
+                                <a href="" class="link1 text-primary">Inspiration</a>
+                            </div>
+                            <div class="pb-1">
+                                <h4>
+                                    <a href="" class="text-dark link-hover">We create successful digital products.</a>
+                                </h4>
+                            </div>
+                            <div class="">
+                                <span class="fa-solid fa-user text-muted"></span>
+                                <span class="text-muted">by W3Layouts</span>
+                                <span class="fa-solid fa-clock text-muted"></span>
+                                <span class="text-muted">july 7, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel -->
+    <section class="slider-clients">
+        <div class="container py-5">
+            <div class="row py-4 text-center">
+                <p class="fs-4 text-muted">Happy Clients</p>
+                <h1 class="text-dark pb-5">What Our Client Says</h1>
+            </div>
+
+            <!-- sliders -->
+
+            <div class="row">
+                <div class="bxslider">
+                    <div class="img1">
+                        <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+                        <div class="row py-2 mx-5">
+                            <div class="col-lg-6">
+                                <div class="border border-1 p-4">
+                                    <p class="h4">Lorem ipsum dolor sit amet</p>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Illum suscipit, alias voluptates deserunt exercitationem
+                                        molestias optio, hic amet fugit minima illo tempore. Enim,
+                                        architecto. Cum perspiciatis magni aut voluptas officiis.
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-lg-3">
+                                        <img src="team1.jpg" alt=""
+                                            style="height: 100px; width: 100px; border-radius: 50%" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>juliya sakura</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border border-1 p-4">
+                                    <p class="h4">Lorem ipsum dolor sit amet</p>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Illum suscipit, alias voluptates deserunt exercitationem
+                                        molestias optio, hic amet fugit minima illo tempore. Enim,
+                                        architecto. Cum perspiciatis magni aut voluptas officiis.
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-lg-3">
+                                        <img src="team2.jpg" alt=""
+                                            style="height: 100px; width: 100px; border-radius: 50%" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>alexander sakura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img2">
+                        <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+                        <div class="row py-2 mx-5">
+                            <div class="col-lg-6">
+                                <div class="border border-1 p-4">
+                                    <p class="h4">Lorem ipsum dolor sit amet</p>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Illum suscipit, alias voluptates deserunt exercitationem
+                                        molestias optio, hic amet fugit minima illo tempore. Enim,
+                                        architecto. Cum perspiciatis magni aut voluptas officiis.
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-lg-3">
+                                        <img src="team3.jpg" alt=""
+                                            style="height: 100px; width: 100px; border-radius: 50%" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>john wilson</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border border-1 p-4">
+                                    <p class="h4">Lorem ipsum dolor sit amet</p>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Illum suscipit, alias voluptates deserunt exercitationem
+                                        molestias optio, hic amet fugit minima illo tempore. Enim,
+                                        architecto. Cum perspiciatis magni aut voluptas officiis.
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-lg-3">
+                                        <img src="team1.jpg" alt=""
+                                            style="height: 100px; width: 100px; border-radius: 50%" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>juliya sakura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img3">
+                        <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+                        <div class="row py-2 mx-5">
+                            <div class="col-lg-6">
+                                <div class="border border-1 p-4">
+                                    <p class="h4">Lorem ipsum dolor sit amet</p>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Illum suscipit, alias voluptates deserunt exercitationem
+                                        molestias optio, hic amet fugit minima illo tempore. Enim,
+                                        architecto. Cum perspiciatis magni aut voluptas officiis.
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-lg-3">
+                                        <img src="team2.jpg" alt=""
+                                            style="height: 100px; width: 100px; border-radius: 50%" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>johnson william</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border border-1 p-4">
+                                    <p class="h4">Lorem ipsum dolor sit amet</p>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Illum suscipit, alias voluptates deserunt exercitationem
+                                        molestias optio, hic amet fugit minima illo tempore. Enim,
+                                        architecto. Cum perspiciatis magni aut voluptas officiis.
+                                    </p>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-lg-3">
+                                        <img src="team3.jpg" alt=""
+                                            style="height: 100px; width: 100px; border-radius: 50%" />
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>juliya sakura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="features">
+        <div class="container py-5">
+            <div class="row py-4 text-center">
+                <p class="fs-4 text-muted">Thank You For Watching</p>
+                <h1 class="text-dark pb-5">Purchase the Workplace now and <br /> make everything easier</h1>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-auto text-center">
+                <button class="btn btn-1">Purchase now</button>
+            </div>
+    </section>
+
+    <section class="w3l-footer-texthny-inf text-center SEOGFooter text-primary">
+        <h6 class="foot-sub-title mb-1">
+            LET’S WORK TOGETHER</h6>
+        <h4><a href="mailto:seogexample@mail.com" class="mail text-info">Seogexample@mail.com</a>
+        </h4>
+
+        <div class="main-social-footer-29 mt-4 mb-lg-5 mb-4 FooterSocial">
+            <a href="https://www.facebook.com/w3layouts/" class="facebook"><span class="fab fa-facebook-f"></span></a>
+
+            <a href="https://twitter.com/W3layouts" class="twitter"><span class="fab fa-twitter"></span></a>
+
+            <a href="https://www.instagram.com/w3layouts_/" class="instagram"><span class="fab fa-instagram"></span></a>
+
+            <a href="https://in.linkedin.com/company/w3layouts" class="linkedin"><span
+                    class="fab fa-linkedin-in"></span></a>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        let icon = document.querySelector(".bi-moon");
+        let b = document.querySelector("body");
+
+        icon.addEventListener("click", function () {
+            b.classList.toggle("dark-mode");
+
+            if (b.classList.contains("dark-mode") == true) {
+                icon.classList.remove("bi-moon");
+                icon.classList.add("bi-sun");
+            } else {
+                icon.classList.remove("bi-sun");
+                icon.classList.add("bi-moon");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+}
+
+.dark-mode {
+    background-color: rgb(40, 39, 39) !important;
+    color: white !important;
+}
+
+.dark-mode .navbar {
+    background-color: rgb(40, 39, 39) !important;
+}
+
+.navigation .logo-text {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation .logo-text span {
+    color: red;
+}
+
+.navigation .form1 {
+    position: relative;
+}
+
+.navigation .form1 .ser {
+    position: absolute;
+    top: 7px;
+    right: 18px;
+}
+
+.navigation .nav-bar {
+    position: fixed;
+    top: 0;
+}
+
+.navigation .nav-bar-pos {
+    position: relative;
+}
+
+.navigation .pos-moon {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    font-size: 25px;
+}

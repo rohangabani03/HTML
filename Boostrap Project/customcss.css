@@ -1,0 +1,169 @@
+a {
+  text-decoration: none;
+}
+
+.dark-mode {
+  background-color: rgb(40, 39, 39) !important;
+  color: white !important;
+}
+
+.dark-mode .navbar {
+  background-color: rgb(40, 39, 39) !important;
+}
+
+.dark-mode .main-header {
+  background-color: rgb(40, 39, 39) !important;
+}
+
+.navigation .logo-text {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation .logo-text span {
+  color: red;
+}
+
+.navigation .form1 {
+  position: relative;
+}
+
+.navigation .form1 .ser {
+  position: absolute;
+  top: 7px;
+  right: 18px;
+}
+
+.navigation .nav-bar {
+  position: fixed;
+  top: 0;
+}
+
+.navigation .nav-bar-pos {
+  position: relative;
+}
+
+.navigation .pos-moon {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 25px;
+}
+
+.main-header {
+  background-color: aliceblue;
+}
+
+.main-header .divide-line::before {
+  content: "";
+  margin: 30px 0px;
+  width: 100px;
+  height: 5px;
+  background-color: rgb(6, 66, 114);
+  display: block;
+}
+
+.main-header .btn-1 {
+  background-color: orangered;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px rgb(242, 140, 106);
+}
+
+.about-as .btn-1 {
+  background-color: orangered;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px rgb(242, 140, 106);
+}
+
+.about-as .para-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.features h4 .link-chnge {
+  color: black !important;
+  transition: 1s all ease;
+}
+
+.features h4 .link-chnge:hover {
+  color: orangered !important;
+}
+
+.reasons .links {
+  color: black;
+}
+
+.reasons .links:hover {
+  color: #00c3ff;
+}
+
+.best-part {
+  background-color: lightcyan;
+}
+
+.best-part .btn-1 {
+  background-color: orangered;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px rgb(242, 140, 106);
+}
+
+.blog-post .link-hover:hover {
+  color: orangered !important;
+}
+
+.blog-post img {
+  height: 250px;
+}
+
+.blog-post .card-change {
+  border: none !important;
+}
+
+/* .slider-clients .move-btn {
+    margin-top: 100px !important;
+  } */
+
+.features .btn-1 {
+  background-color: orangered;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
+  font-weight: 700;
+  box-shadow: 5px 5px 10px rgb(242, 140, 106);
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .navigation .pos-moon {
+    right: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation .pos-moon {
+    right: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation .pos-moon {
+    right: 35px;
+  }
+}
