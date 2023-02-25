@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="service-max-size576.css">
+    <link rel="stylesheet" href="service-min-size576.css">
+    <link rel="stylesheet" href="service-min-size768.css">
+    <link rel="stylesheet" href="service-min-size992.css">
+    <link rel="stylesheet" href="services-min-size1200.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .home-image img {
+            filter: brightness(50%);
+            height: 350px;
+            width: 100%;
+            background-position: center;
+            position: absolute;
+            z-index: -1;
+
+        }
+
+        .navi {
+            position: relative;
+        }
+
+        .home-image .header-nav {
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+        }
+
+        .home-image .header-nav .left-logo {
+            width: 20%;
+        }
+
+        .home-image .header-nav .left-logo a {
+            color: white;
+            font-size: 0.4in;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+
+        .home-image .header-nav .left-logo span {
+            font-family: system-ui;
+            font-weight: lighter;
+        }
+
+        .home-image .header-nav .middle-nav {
+            padding: 50px;
+            width: 60%;
+        }
+
+        .home-image .header-nav .middle-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .home-image .header-nav .middle-nav a {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .home-image .header-nav .right-search {
+            width: 20%;
+            padding: 30px;
+            display: block;
+        }
+
+        .home-image .right-search span {
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .home-image .right-search button {
+            height: 45px;
+            width: 130px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(205, 205, 205);
+            color: #a13535;
+            font-weight: bold;
+        }
+
+        .home-header .home-image .homecontent {
+            padding: 50px;
+            display: flex;
+        }
+
+        .home-header .home-image .homecontent a {
+            list-style: none;
+            color: white;
+        }
+
+        .home-header .home-image .homecontent h3 {
+            font-size: 20px;
+            color: white;
+            padding: 5px;
+        }
+
+        .home-header .home-image .homecontent span {
+            padding: 10px;
+        }
+
+        .what-offered {
+            height: 1100px;
+            width: 100%;
+            background-color: #ececec;
+        }
+
+        .what-offered .container {
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        .what-offered .heading {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .what-offered .heading h5 {
+            color: #f9506f;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 30px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .what-offered .heading h3 {
+            color: rgb(0, 0, 42);
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        .what-offered .heading span {
+            font-weight: lighter;
+        }
+
+        .what-offered .product-design {
+            display: flex;
+        }
+
+        .what-offered .product-design .product-left {
+            padding: 20px;
+        }
+
+        .what-offered .product-design .product-left h2 {
+            color: rgb(0, 0, 42);
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+
+        .what-offered .product-design .product-left span {
+            font-weight: lighter;
+        }
+
+        .what-offered .product-design .product-left p {
+            font-size: 20px;
+            line-height: 26px;
+            color: #8c9cac;
+            font-family: 'Spartan', sans-serif;
+            margin-bottom: 50px;
+        }
+
+        .what-offered .product-design .product-left button {
+            height: 60px;
+            width: 140px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .what-offered .product-design .product-left button a {
+            list-style: none;
+            color: white;
+        }
+
+        .what-offered .product-design .product-right {
+            padding: 20px;
+        }
+
+        .what-offered .product-design .product-right img {
+            height: 360px;
+            border-radius: 20px;
+            margin-left: 50px;
+            width: 400px;
+        }
+
+        .what-offered .ecom-design {
+            display: flex;
+        }
+
+        .what-offered .ecom-design .ecom-left {
+            padding: 20px;
+        }
+
+        .what-offered .ecom-design .ecom-left img {
+            height: 400px;
+            border-radius: 20px;
+            width: 400px;
+        }
+
+        .what-offered .ecom-design .ecom-right {
+            margin-left: 50px;
+            padding: 20px;
+        }
+
+        .what-offered .ecom-design .ecom-right h2 {
+            color: rgb(0, 0, 42);
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+        }
+
+        .what-offered .ecom-design .ecom-right span {
+            font-weight: lighter;
+        }
+
+        .what-offered .ecom-design .ecom-right p {
+            font-size: 20px;
+            line-height: 26px;
+            color: #8c9cac;
+            font-family: 'Spartan', sans-serif;
+            margin-bottom: 50px;
+        }
+
+        .what-offered .ecom-design .ecom-right button {
+            height: 60px;
+            width: 140px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .what-offered .ecom-design .ecom-right button a {
+            color: white;
+        }
+
+        .featured-services {
+            height: 600px;
+            width: 100%;
+            /* background-color: blue; */
+        }
+
+        .featured-services .container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .featured-services .heading {
+            text-align: center;
+        }
+
+        .featured-services .heading h6 {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .featured-services .heading h3 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(0, 0, 42);
+            margin-bottom: 50px;
+        }
+
+        .featured-services .heading h3 span {
+            font-weight: lighter;
+        }
+
+        .featured-services .services {
+            display: grid;
+            grid-gap: 25px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            /* text-align: center; */
+            margin-left: 100px;
+        }
+
+        .featured-services .services .services-1,
+        .services-2,
+        .services-3,
+        .services-4,
+        .services-5,
+        .services-6 {
+            height: 200px;
+            width: 350px;
+            background-color: #f8f9fa;
+            box-shadow: 2px 2px 2px gray;
+            border-radius: 10px;
+        }
+
+        .featured-services .services .services-1 .area-box {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            padding: 36px;
+        }
+
+        .featured-services .services .services-2 .area-box {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            padding: 36px;
+        }
+
+        .featured-services .services .services-3 .area-box {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            padding: 36px;
+        }
+
+        .featured-services .services .services-4 .area-box {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            padding: 36px;
+        }
+
+        .featured-services .services .services-5 .area-box {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            padding: 36px;
+        }
+
+        .featured-services .services .services-6 .area-box {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+            padding: 36px;
+        }
+
+        .featured-services .services .services-1 .area-box span {
+            color: red;
+            font-size: 40px;
+        }
+
+        .featured-services .services .services-1 .area-box .area-box-info h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .featured-services .services .services-1 .area-box .area-box-info h3:hover {
+            color: red;
+        }
+
+        .featured-services .services .services-1 .area-box .area-box-info p {
+            opacity: 0.6;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .featured-services .services .services-2 .area-box span {
+            color: red;
+            font-size: 40px;
+        }
+
+        .featured-services .services .services-2 .area-box .area-box-info h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .featured-services .services .services-2 .area-box .area-box-info h3:hover {
+            color: red;
+        }
+
+        .featured-services .services .services-2 .area-box .area-box-info p {
+            opacity: 0.6;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .featured-services .services .services-3 .area-box span {
+            color: red;
+            font-size: 40px;
+        }
+
+        .featured-services .services .services-3 .area-box .area-box-info h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .featured-services .services .services-3 .area-box .area-box-info h3:hover {
+            color: red;
+        }
+
+        .featured-services .services .services-3 .area-box .area-box-info p {
+            opacity: 0.6;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .featured-services .services .services-4 .area-box span {
+            color: red;
+            font-size: 40px;
+        }
+
+        .featured-services .services .services-4 .area-box .area-box-info h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .featured-services .services .services-4 .area-box .area-box-info h3:hover {
+            color: red;
+        }
+
+        .featured-services .services .services-4 .area-box .area-box-info p {
+            opacity: 0.6;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .featured-services .services .services-5 .area-box span {
+            color: red;
+            font-size: 40px;
+        }
+
+        .featured-services .services .services-5 .area-box .area-box-info h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .featured-services .services .services-5 .area-box .area-box-info h3:hover {
+            color: red;
+        }
+
+        .featured-services .services .services-5 .area-box .area-box-info p {
+            opacity: 0.6;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .featured-services .services .services-6 .area-box span {
+            color: red;
+            font-size: 40px;
+        }
+
+        .featured-services .services .services-6 .area-box .area-box-info h3 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .featured-services .services .services-6 .area-box .area-box-info h3:hover {
+            color: red;
+        }
+
+        .featured-services .services .services-6 .area-box .area-box-info p {
+            opacity: 0.6;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        .our-progress {
+            height: 650px;
+            width: 100%;
+            background-color: #f5f5f5;
+        }
+
+        .our-progress .container {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .our-progress .progress {
+            display: flex;
+        }
+
+        .our-progress .progress .our-progress-right img {
+            height: 550px;
+            width: 500px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .our-progress .progress .our-progress-left {
+            padding: 35px;
+            margin-left: 30px;
+        }
+
+        .our-progress .progress .our-progress-left .our-progress-text h6 {
+            font-size: 20px;
+            font-weight: 500;
+            color: red;
+            margin-bottom: 25px;
+        }
+
+        .our-progress .progress .our-progress-left .our-progress-text h3 {
+            font-size: 35px;
+            font-weight: bolder;
+            color: rgb(0, 0, 42);
+            margin-bottom: 25px;
+        }
+
+        .our-progress .progress .our-progress-left .our-progress-text span {
+            font-weight: lighter;
+        }
+
+        .our-progress .progress .our-progress-left .our-progress-text p {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            line-height: 26px;
+            opacity: 0.6;
+            font-family: 'Spartan', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .our-progress .progress .our-progress-left .progress-percent h3 {
+            font-size: 20px;
+            color: rgb(0, 0, 42);
+        }
+
+        .line {
+            width: 110%;
+            height: 0.5rem;
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+            margin-bottom: 28px;
+            margin-top: 10px;
+        }
+
+        .line1 {
+            width: 34%;
+            height: 0.5rem;
+            border-radius: 10px;
+            position: absolute;
+            background-color: rgb(255, 56, 56);
+        }
+
+        .line2 {
+            width: 40%;
+            height: 0.5rem;
+            border-radius: 10px;
+            position: absolute;
+            background-color: rgb(255, 56, 56);
+        }
+
+        .line3 {
+            width: 30%;
+            height: 0.5rem;
+            border-radius: 10px;
+            position: absolute;
+            background-color: rgb(255, 56, 56);
+        }
+
+        .line4 {
+            width: 38%;
+            height: 0.5rem;
+            border-radius: 10px;
+            position: absolute;
+            background-color: rgb(255, 56, 56);
+        }
+
+        .line5 {
+            width: 38%;
+            height: 0.5rem;
+            border-radius: 10px;
+            position: absolute;
+            background-color: rgb(255, 56, 56);
+        }
+
+        /* footer */
+        footer {
+            background-color: rgb(3, 3, 33);
+            color: white;
+            padding: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        footer .footer-content .left-content,
+        .middle-content,
+        .right-content {
+            padding: 20px;
+        }
+
+        footer .footer-content .left-content h1 {
+            padding-bottom: 20px;
+        }
+
+        footer .footer-content .left-content span {
+            font-weight: lighter;
+            font-family: system-ui;
+        }
+
+        footer .footer-content .left-content p {
+            padding-bottom: 20px;
+            width: 180px;
+        }
+
+        footer .footer-content .left-content button {
+            height: 50px;
+            width: 100px;
+            background-color: magenta;
+            color: white;
+            border-radius: 10px;
+        }
+
+        footer .footer-content .middle-content h1 {
+            padding-bottom: 20px;
+        }
+
+        footer .footer-content .middle-content ul {
+            list-style: none;
+        }
+
+        footer .footer-content .middle-content .links {
+            /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+            gap: 50px;
+            display: flex;
+        }
+
+        footer .footer-content .middle-content li {
+            padding: 10px;
+        }
+
+        footer .footer-content .right-content h1 {
+            padding-bottom: 20px;
+        }
+
+        footer .footer-content .right-content p {
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        footer .footer-content .right-content .email {
+            padding-top: 10px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        footer .footer-content .right-content input[type="text"] {
+            height: 40px;
+            width: 250px;
+            padding: 10px;
+        }
+
+        footer .footer-content .right-content button {
+            height: 40px;
+            width: 50px;
+            background-color: magenta;
+            color: white;
+            position: absolute;
+            border: none;
+            top: 10px;
+            left: 200px;
+        }
+
+        footer .footer-content .right-content .social span {
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- homepage -->
+    <header class="home-header">
+        <div class="home-image">
+            <img src="banner2.jpg" alt="">
+            <div class="container">
+                <div class="navi">
+                    <div class="header-nav">
+                        <div class="left-logo">
+                            <a href="">Passion<span>Kraft</span> </a>
+                        </div>
+                        <div class="middle-nav">
+                            <ul>
+                                <li><a href="01.passionkraft.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html" style="color: red;">Services</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Pages</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-search">
+                            <a href=""><span class="fa-solid fa-magnifying-glass"></span></a>
+                            <a href=""><button>Get in Touch</button></a>
+                            <a href=""><span class="fa-solid fa-moon"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="homecontent">
+                    <h3><a href="01.passionkraft.html" style="color: red;">Home</a></h3>
+                    <a href=""><span class="fas fa-chevron-right mx-2" aria-hidden="true"></span></a>
+                    <h3><a href="">Services</a></h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- what we offered -->
+    <section class="what-offered">
+        <div class="container">
+            <div class="heading">
+                <h5>What We Offered</h5>
+                <h3>Check Our <span>Services</span></h3>
+            </div>
+            <div class="product-design">
+                <div class="product-left">
+                    <h2>Product <span>Design</span></h2>
+                    <p>Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque <br> ut
+                        lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit, <br> dolor eget
+                        ex.Lorem ipsum viverra feugiat</p>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. <br> Semper at
+                        tempufddfel.Lorem ipsum dolor sit, amet consectetur elit.
+
+                    </p>
+                    <button><a href="">Read more</a></button>
+                </div>
+                <div class="product-right">
+                    <img src="about3.jpg" alt="">
+                </div>
+            </div>
+            <div class="ecom-design">
+                <div class="ecom-left">
+                    <img src="about5.jpg" alt="">
+                </div>
+                <div class="ecom-right">
+                    <h2>E-Commerce <span>Design</span></h2>
+                    <p>Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, lacinia est. Quisque <br> ut
+                        lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init magnaa velit, <br> dolor eget
+                        ex.Lorem ipsum viverra feugiat</p>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. <br> Semper at
+                        tempufddfel.Lorem ipsum dolor sit, amet consectetur elit.
+
+                    </p>
+                    <button><a href="">Read more</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featured -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="heading">
+                <h6>Featured Services</h6>
+                <h3>Featured <span>Services</span></h3>
+            </div>
+            <div class="services">
+                <div class="services-1">
+                    <div class="area-box">
+                        <span class="fas fa-shipping-fast" aria-hidden="true"></span>
+                        <div class="area-box-info">
+                            <a href="">
+                                <h3>Free Shipping</h3>
+                            </a>
+                            <p>Amus a ligula quam tesque et <br> ut justo, Duis sed dolor et <br> amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-2">
+                    <div class="area-box">
+                        <span class="fas fa-hand-holding-usd" aria-hidden="true"></span>
+                        <div class="area-box-info">
+                            <a href="">
+                                <h3>Money Back</h3>
+                            </a>
+                            <p>Amus a ligula quam tesque et <br> ut justo, Duis sed dolor et <br> amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-3">
+                    <div class="area-box">
+                        <span class="fas fa-headset" aria-hidden="true"></span>
+                        <div class="area-box-info">
+                            <a href="">
+                                <h3>Online Support 24/7</h3>
+                            </a>
+                            <p>Amus a ligula quam tesque et <br> ut justo, Duis sed dolor et <br> amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-4">
+                    <div class="area-box">
+                        <span class="fas fa-user-shield" aria-hidden="true"></span>
+                        <div class="area-box-info">
+                            <a href="">
+                                <h3>100% Secure</h3>
+                            </a>
+                            <p>Amus a ligula quam tesque et <br> ut justo, Duis sed dolor et <br> amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-5">
+                    <div class="area-box">
+                        <span class="fas fa-hand-peace" aria-hidden="true"></span>
+                        <div class="area-box-info">
+                            <a href="">
+                                <h3>Best Price</h3>
+                            </a>
+                            <p>Amus a ligula quam tesque et <br> ut justo, Duis sed dolor et <br> amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-6">
+                    <div class="area-box">
+                        <span class="fas fa-box-open"></span>
+                        <div class="area-box-info">
+                            <a href="">
+                                <h3>Free Returns</h3>
+                            </a>
+                            <p>Amus a ligula quam tesque et <br> ut justo, Duis sed dolor et <br> amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- progress -->
+    <section class="our-progress">
+        <div class="container">
+            <div class="progress">
+                <div class="our-progress-right">
+                    <img src="about5.jpg" alt="">
+                </div>
+                <div class="our-progress-left">
+                    <div class="our-progress-text">
+                        <h6>Our Progress</h6>
+                        <h3>Our <span>Skills</span></h3>
+                        <p>Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac sed, <br> lacinia est. Quisque
+                            ut lectus, eros et, sed risus. Nullam sit amet <br> laoreet elit. non init magnaa velit,
+                            dolor eget ex.Lorem ipsum <br> viverra feugiat.</p>
+                    </div>
+                    <div class="progress-percent">
+                        <div class="precent1">
+                            <h3>Free Shipping</h3>
+                            <div class="line">
+                                <div class="line1"></div>
+                            </div>
+                        </div>
+                        <div class="precent2">
+                            <h3>Best Price</h3>
+                            <div class="line">
+                                <div class="line2"></div>
+                            </div>
+                        </div>
+                        <div class="precent3">
+                            <h3>100% Secure</h3>
+                            <div class="line">
+                                <div class="line3"></div>
+                            </div>
+                        </div>
+                        <div class="precent4">
+                            <h3>Branded Products</h3>
+                            <div class="line">
+                                <div class="line4"></div>
+                            </div>
+                        </div>
+                        <div class="precent5">
+                            <h3>24/7 Online Support</h3>
+                            <div class="line">
+                                <div class="line5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="left-content">
+                <h1>Passion<span>Kraft</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    nemo maiores enim. Atque odio amet,
+                </p>
+                <button>Contect Us</button>
+            </div>
+            <div class="middle-content">
+                <h1>Quick <span>Links</span></h1>
+                <div class="links">
+                    <div class="left-links">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-links">
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">terms of use</a></li>
+                            <li><a href="">Sales and Refunds</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <h1>Keep <span>Connected</span></h1>
+                <p>Get Updates By Subscribe Our Weekly Newsletter</p>
+                <form action="" class="email">
+                    <div class="mail">
+                        <input type="text" name="" id="" placeholder="Your Email Address" />
+                    </div>
+                    <button><span class="fa-solid fa-paper-plane"></span></button>
+                </form>
+                <div class="social">
+                    <span class="fa-brands fa-facebook"></span>
+                    <span class="fa-brands fa-twitter"></span>
+                    <span class="fa-brands fa-pinterest"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-google-plus"></span>
+                    <span class="fa-brands fa-linkedin"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
